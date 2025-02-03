@@ -1,0 +1,73 @@
+.pricing {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.pricing h2 {
+  font-size: 2rem;
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.plan {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.plan h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.25rem;
+  color: #4b0082;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.features li {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #3a0066;
+}

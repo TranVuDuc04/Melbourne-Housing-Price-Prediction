@@ -1,0 +1,92 @@
+/* src/components/SearchForm.css */
+
+.search-form-container {
+  font-family: Arial, sans-serif;
+  max-width: 70%; 
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #4b0082;
+}
+
+.search-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.search-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.postcode-container {
+  display: flex;
+  align-items: center;
+}
+
+.postcode-container input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.incidents-recorded {
+  color: #555;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4b0082;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.search-form button:hover {
+  background-color: #371466;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Style for the "View Insights" button to match "Predict" */
+.search-form .insight-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4b0082;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.search-form .insight-button:hover {
+  background-color: #371466;
+}

@@ -1,0 +1,58 @@
+.team {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4b0082;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.member {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.member:hover {
+  transform: scale(1.05);
+}
+
+.member-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.member h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.position {
+  color: #4b0082;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.member p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
