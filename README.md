@@ -1,4 +1,4 @@
-# Melbourne Housing Insights ASSIGNMENT
+# Melbourne Housing Insights
 
 This web application provides users with insights into Melbourne's housing market through predictive modeling and interactive data visualization. It allows users to input property-related data, receive a price prediction, and visualize trends based on historical data. The app consists of a frontend built with React and a backend API developed using FastAPI.
 
