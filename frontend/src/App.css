@@ -1,4 +1,4 @@
-/* src/App.css */
+/* Elegant & Bright App-wide Styles */
 
 * {
   box-sizing: border-box;
@@ -6,21 +6,51 @@
   padding: 0;
 }
 
-body, html {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #5d5d5d;
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef3fa 100%);
+  color: #22223b;
+  font-family: 'Poppins', 'Inter', 'Segoe UI', Arial, sans-serif;
   min-height: 100vh;
 }
 
 header, footer {
   width: 100%;
+  background: transparent;
 }
 
 .main-content {
+  min-height: 80vh;
+  padding: 48px 0 48px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+}
+
+a {
+  color: #6c63ff;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #4e47c7;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  background-color: #f8fafc;
+  color: #22223b;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 0 0 1px #d1d5db;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
 }

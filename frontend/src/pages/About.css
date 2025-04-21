@@ -1,40 +1,43 @@
-/* src/pages/About.css */
-
+/* Luxury About Page */
 .about-page {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    padding: 48px 24px;
+    line-height: 1.7;
+    background: #1a1d23; /* Deep blue background */
+    color: #ffd700; /* Gold text color */
+    border-radius: 16px;
+    box-shadow: 0 3px 24px 0 rgba(0,0,0,0.18);
   }
   
   .about-page h1 {
-    font-size: 2.2em;
-    margin-bottom: 20px;
+    font-size: 2.6em;
+    margin-bottom: 24px;
     text-align: center;
-    color: #4b0082;
+    color: #ffd700; /* Gold text color */
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
   }
   
   .about-page h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 2em;
+    margin-bottom: 16px;
+    color: #ffd700; /* Gold text color */
   }
   
   .about-page p {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #e6e6e6; /* Light gray text color */
+    margin-bottom: 24px;
   }
   
   .about-page .project-overview,
   .about-page .how-it-works,
   .about-page .team {
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 28px;
+    margin-bottom: 34px;
+    border-radius: 10px;
+    background: #343a40; /* Dark gray background */
+    box-shadow: 0 2px 8px #ffd70022; /* Gold box shadow */
   }
   
   .about-page .team ul {
@@ -44,12 +47,11 @@
   }
   
   .about-page .team li {
-    font-size: 1em;
-    color: #333;
-    margin: 5px 0;
+    font-size: 1.1em;
+    color: #ffd700; /* Gold text color */
+    margin: 7px 0;
   }
   
   .about-page strong {
-    color: #4b0082;
+    color: #ffd700; /* Gold text color */
   }
-  

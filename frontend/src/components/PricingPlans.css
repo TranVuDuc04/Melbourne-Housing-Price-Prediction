@@ -1,73 +1,133 @@
-.pricing {
+/* Elegant & Bright Pricing Plans */
+.pricing-section {
+  background: #fff;
+  padding: 56px 0 36px 0;
+  border-radius: 24px;
+  box-shadow: 0 3px 24px 0 #f3f1fe;
+  margin: 44px auto;
+  max-width: 1200px;
+}
+
+.pricing-section h2 {
+  width: 100%;
   text-align: center;
-  padding: 40px;
-  background-color: #f9f9f9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 2.1em;
+  color: #22223b;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
 }
 
 .pricing h2 {
-  font-size: 2rem;
-  color: #4b0082;
-  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 2.1em;
+  color: #22223b;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
+}
+
+.search-form-container h1 {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 2em;
+  color: #22223b;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
 }
 
 .plans {
   display: flex;
+  gap: 36px;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .plan {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  width: 220px;
-  text-align: center;
+  background: #f8fafc;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 18px;
+  color: #22223b;
+  padding: 36px 28px 32px 28px;
+  width: 320px;
+  box-shadow: 0 2px 12px 0 #e7eafe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .plan:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px 0 #d1d5db44;
+  border-color: #6c63ff;
 }
 
 .plan h3 {
-  font-size: 1.5rem;
-  color: #333;
+  color: #6c63ff;
+  font-size: 2em;
+  margin-bottom: 16px;
+}
+
+.plan .price {
+  color: #6c63ff;
+  font-size: 1.6em;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
-.price {
-  font-size: 1.25rem;
-  color: #4b0082;
-  font-weight: bold;
-  margin-bottom: 15px;
+.plan .description {
+  color: #6a6a8b;
+  margin-bottom: 16px;
+  font-size: 1.1em;
 }
 
-.features {
-  list-style-type: none;
+.plan .features {
+  list-style: none;
   padding: 0;
-  margin: 15px 0;
+  margin-bottom: 18px;
+  color: #22223b;
 }
 
-.features li {
-  color: #555;
-  font-size: 0.9rem;
-  margin-bottom: 5px;
+.plan .features li {
+  margin-bottom: 7px;
+  font-size: 1em;
 }
 
-button {
-  padding: 10px 15px;
-  background-color: #4b0082;
-  color: white;
+.plan button {
+  padding: 12px 34px;
+  background: #6c63ff;
+  color: #fff;
   border: none;
+  border-radius: 32px;
+  font-size: 1.1em;
+  font-weight: 700;
   cursor: pointer;
-  border-radius: 4px;
-  font-size: 1rem;
-  transition: background-color 0.2s;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 16px;
 }
 
-button:hover {
-  background-color: #3a0066;
+.plan button:hover {
+  background: #4e47c7;
+  color: #fff;
 }

@@ -133,7 +133,10 @@ function SearchForm() {
   return (
     <div className="search-form-container">
       <h1>Predict House Price</h1>
-      <p>Server Status: {serverStatus}</p>
+      {/* Only show server status if server is down */}
+      {serverStatus !== "Server is up and running" && (
+        <p>Server Status: {serverStatus}</p>
+      )}
       <form className="search-form" onSubmit={handleSubmit}>
         <label>Distance from CBD (km):</label>
         <input
@@ -196,7 +199,7 @@ function SearchForm() {
         {errors.Car && <p className="error">{errors.Car}</p>}
 
         <label>Postcode:</label>
-        <div className="postcode-container">
+        <div>
           <input
             type="number"
             name="Postcode"
@@ -228,7 +231,12 @@ function SearchForm() {
         </button>
       </form>
       <br />
-      {result && <h2>Predicted Price: ${result.toFixed(2)}</h2>}
+      {result && (
+        <div className="predicted-price-box">
+          <h2>Predicted Price</h2>
+          <div className="predicted-price-value">${result.toFixed(2)}</div>
+        </div>
+      )}
     </div>
   );
 }

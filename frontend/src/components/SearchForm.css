@@ -1,41 +1,55 @@
-/* src/components/SearchForm.css */
-
-.search-form-container {
-  font-family: Arial, sans-serif;
-  max-width: 70%; 
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Elegant & Bright Search Form */
+.search-form {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 3px 24px 0 #f3f1fe;
+  padding: 28px 32px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  max-width: 700px;
+  margin: 0 auto 36px auto;
 }
 
+/* Ensure Predict House Price heading is centered */
 .search-form h1 {
+  width: 100%;
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #4b0082;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  color: #22223b;
+  margin-top: 8px;
+  margin-bottom: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .search-form label {
+  color: #22223b;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 1.08em;
   display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #555;
+  width: 100%;
+  text-align: center;
 }
 
-.search-form input {
+.search-form-row {
+  display: flex;
+  gap: 18px;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
+  justify-content: center;
 }
 
 .postcode-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .postcode-container input {
@@ -43,50 +57,116 @@
   margin-right: 10px;
 }
 
+.search-form input,
+.search-form select {
+  padding: 13px 18px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #22223b;
+  font-size: 1.08em;
+  outline: none;
+  transition: border 0.2s;
+  margin-bottom: 0;
+  min-width: 140px;
+  box-shadow: 0 1px 4px #e7eafe11;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form input:focus,
+.search-form select:focus {
+  border: 2px solid #6c63ff;
+}
+
+.search-form button, .search-form .insight-button {
+  padding: 13px 36px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 32px;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 16px;
+  box-shadow: 0 2px 8px #e7eafe;
+}
+
+.search-form button:hover, .search-form .insight-button:hover {
+  background: #4e47c7;
+  color: #fff;
+}
+
+.search-form .error {
+  color: #ff5e5e;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
 .incidents-recorded {
-  color: #555;
+  color: #6c63ff;
   font-weight: bold;
   font-size: 20px;
 }
 
-.search-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4b0082;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
+.predicted-price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 36px auto 0 auto;
+  padding: 32px 40px 28px 40px;
+  background: linear-gradient(120deg, #f8fafc 60%, #e7eafe 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px 0 #e7eafe99;
+  max-width: 380px;
+  min-width: 260px;
+  border: 2.5px solid #6c63ff33;
 }
 
-.search-form button:hover {
-  background-color: #371466;
+.predicted-price-box h2 {
+  color: #6c63ff;
+  font-size: 2em;
+  margin-bottom: 12px;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
 }
 
-.error {
-  color: red;
-  font-size: 12px;
-  margin-top: -10px;
-  margin-bottom: 10px;
+.predicted-price-value {
+  color: #22223b;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 38px;
+  font-size: 2.1em;
+  font-weight: 700;
+  box-shadow: 0 2px 12px #e7eafe44;
+  margin-bottom: 4px;
 }
 
-/* Style for the "View Insights" button to match "Predict" */
-.search-form .insight-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4b0082;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
+@media (max-width: 700px) {
+  .search-form-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .search-form {
+    padding: 18px 8px 12px 8px;
+  }
 }
 
-.search-form .insight-button:hover {
-  background-color: #371466;
+@media (max-width: 600px) {
+  .predicted-price-box {
+    padding: 18px 8px 12px 8px;
+    min-width: 0;
+    max-width: 95vw;
+  }
+  .predicted-price-box h2 {
+    font-size: 1.3em;
+  }
+  .predicted-price-value {
+    font-size: 1.1em;
+    padding: 12px 10px;
+  }
 }

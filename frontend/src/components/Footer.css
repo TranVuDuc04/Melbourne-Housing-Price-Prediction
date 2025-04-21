@@ -1,8 +1,12 @@
 /* src/components/Footer.css */
+/* Elegant & Bright Footer */
 .footer {
-    background-color: #555555;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
+  background: #fff;
+  color: #6c63ff;
+  text-align: center;
+  padding: 28px 0 18px 0;
+  font-size: 1.08rem;
+  border-top: 1px solid #e5e7eb;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 12px 0 #f3f1fe;
+}

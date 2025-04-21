@@ -1,58 +1,74 @@
-/* src/components/HeroSection.css */
+/* Elegant & Bright Hero Section */
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-image: url('../images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 70vh; 
+  align-items: flex-start;
+  background: linear-gradient(120deg, #f8fafc 60%, #e7eafe 100%);
+  height: 38vh;
+  min-height: 260px;
+  max-height: 400px;
   width: 100vw;
-  text-align: center;
-  padding: 0 20px;
+  text-align: left;
+  padding: 0 7vw 0 7vw;
   box-sizing: border-box;
-  text-shadow: 1px 1px #000000;
+  box-shadow: none;
+  border-radius: 0 0 32px 32px;
 }
 
 .hero h1 {
-  font-size: 3em;
-  color: white;
-  margin-bottom: 0.5em;
+  font-size: 2.3em;
+  color: #22223b;
+  margin-bottom: 0.4em;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero h1 span {
+  color: #6c63ff;
+  background: #f3f1fe;
+  border-radius: 0.4em;
+  padding: 0 0.2em;
 }
 
 .hero p {
-  font-size: 1.2em;
-  color: white;
-  margin-bottom: 1.5em;
+  font-size: 1.05em;
+  color: #6a6a8b;
+  margin-bottom: 1.2em;
+  max-width: 600px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
 .hero button {
-  padding: 15px 30px;
-  background-color: rgba(75, 0, 130, 0.8); 
-  color: white;
+  padding: 15px 36px;
+  background: #6c63ff;
+  color: #fff;
   border: none;
-  border-radius: 4px;
-  font-size: 1em;
+  border-radius: 32px;
+  font-size: 1.1em;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 12px #e7eafe;
+  transition: background 0.3s, color 0.3s;
 }
 
 .hero button:hover {
-  background-color: rgba(58, 0, 106, 0.8);
+  background: #4e47c7;
+  color: #fff;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .hero {
+    padding: 0 4vw 0 4vw;
+    height: 28vh;
+    min-height: 180px;
+    max-height: 300px;
+  }
   .hero h1 {
-      font-size: 2em;
+    font-size: 1.3em;
   }
   .hero p {
-      font-size: 1em;
-  }
-  .hero button {
-      padding: 12px 25px;
-      font-size: 0.9em;
+    font-size: 0.95em;
   }
 }
