@@ -30,7 +30,10 @@ except FileNotFoundError:
 # Enable CORS for localhost frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://melbourne-housing-price-prediction.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -51,7 +54,7 @@ class InputData(BaseModel):
 # Health check endpoint
 @app.get("/health")
 async def health_check():
-    return {"status": "Server is up and running"}
+    return {"status": "ok"}
 
 # Prediction endpoint
 @app.post("/predict")
