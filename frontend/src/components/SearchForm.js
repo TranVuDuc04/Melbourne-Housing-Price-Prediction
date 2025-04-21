@@ -24,7 +24,7 @@ function SearchForm() {
   useEffect(() => {
     const checkServerHealth = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/health");
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/health`);
         setServerStatus(response.data.status);
       } catch (error) {
         setServerStatus("Server is down");
@@ -59,7 +59,7 @@ function SearchForm() {
   const fetchIncidentsData = async (postcode) => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/incidents/${postcode}`
+        `${process.env.REACT_APP_API_URL}/incidents/${postcode}`
       );
       setIncidents(response.data.incidents);
     } catch (error) {
@@ -103,7 +103,7 @@ function SearchForm() {
     }
 
     try {
-      const response = await axios.post("http://localhost:8000/predict", {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/predict`, {
         Distance: parseFloat(inputData.Distance),
         Landsize: parseFloat(inputData.Landsize),
         Rooms: parseInt(inputData.Rooms),

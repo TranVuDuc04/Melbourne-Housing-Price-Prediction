@@ -40,7 +40,7 @@ const Insight = () => {
     const fetchChartData = async () => {
       // Bar Chart for Incidents Recorded
       try {
-        const barResponse = await axios.get(`http://localhost:8000/chart-data/bar?postcode=${postcode}`);
+        const barResponse = await axios.get(`${process.env.REACT_APP_API_URL}/chart-data/bar?postcode=${postcode}`);
         setBarData({
           labels: barResponse.data.labels,
           datasets: [
@@ -61,7 +61,7 @@ const Insight = () => {
 
       // Line Chart for House Prices with Dates
       try {
-        const lineResponse = await axios.get(`http://localhost:8000/chart-data/line?postcode=${postcode}`);
+        const lineResponse = await axios.get(`${process.env.REACT_APP_API_URL}/chart-data/line?postcode=${postcode}`);
         setLineData({
           labels: lineResponse.data.labels,
           datasets: [
@@ -82,7 +82,7 @@ const Insight = () => {
 
       // Pie Chart for Property Distribution by Suburb
       try {
-        const pieResponse = await axios.get("http://localhost:8000/chart-data/pie");
+        const pieResponse = await axios.get(`${process.env.REACT_APP_API_URL}/chart-data/pie`);
         setPieData({
           labels: pieResponse.data.labels,
           datasets: [
